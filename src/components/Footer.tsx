@@ -90,16 +90,20 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="border-t border-white/[0.06] bg-[#09090b] pt-16 sm:pt-20 pb-12">
+    <footer className="border-t border-white/[0.06] bg-[#050505] pt-16 sm:pt-20 pb-12">
       <div className="container-site">
         {/* ── 5-Column Desktop Grid ────────────────────────────────────────── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 lg:gap-8 text-left">
           {/* Column 1 — Brand */}
           <div className="sm:col-span-2 md:col-span-3 lg:col-span-1">
-            <Link to="/" className="flex items-center gap-1.5" aria-label="DETAILING MONSTER home">
+            <Link to="/" className="flex items-center gap-1.5 group" aria-label="DETAILING MONSTER home">
               <span className="text-[15px] font-bold tracking-[0.04em] text-white">DETAILING</span>
-              <span className="text-[15px] font-bold tracking-[0.04em] text-[#e31b23]">MONSTER</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#e31b23] ml-0.5" />
+              <span className="text-[15px] font-bold tracking-[0.04em] text-[#25D366]">MONSTER</span>
+              <img
+                src="/logo.png"
+                alt="Detailing Monster Official Emblem"
+                className="w-8 h-8 sm:w-9 sm:h-9 object-contain ml-1 flex-shrink-0 select-none group-hover:scale-105 transition-transform"
+              />
             </Link>
             <p className="text-[12.5px] text-[#8a8a94] leading-[1.7] max-w-[260px] mt-4">
               Precision care for exceptional cars. We are Karnataka’s elite choice for paint

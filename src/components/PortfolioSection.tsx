@@ -14,8 +14,8 @@ const PortfolioSection: React.FC = () => {
         {/* Left column: Micro label + Two-line heading */}
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <span className="w-2 h-2 bg-[#e31b23] flex-shrink-0" aria-hidden="true" />
-            <span className="text-[10.5px] font-semibold tracking-[0.2em] text-[#8a8a94] uppercase">
+            <span className="w-2 h-2 bg-[#25D366] flex-shrink-0" aria-hidden="true" />
+            <span className="text-[10.5px] font-semibold tracking-[0.2em] text-[#A1A1AA] uppercase">
               OUR PORTFOLIO
             </span>
           </div>

@@ -5,17 +5,17 @@ interface ServiceIconProps {
 }
 
 const ServiceIcon: React.FC<ServiceIconProps> = ({ type }) => {
-  const iconClass = "w-5 h-5 text-[#e31b23]";
+  const iconClass = "w-5 h-5 text-[#25D366]";
 
   switch (type) {
     case 'paint-correction':
       return (
-        <svg className={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          {/* Sparkle / stars — polishing precision */}
-          <path d="M12 3v2M12 19v2M3 12h2M19 12h2" />
-          <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
-          <path d="M5.636 5.636l1.414 1.414M16.95 16.95l1.414 1.414M5.636 18.364l1.414-1.414M16.95 7.05l1.414-1.414" />
-        </svg>
+        <img
+          src="/paint.png"
+          alt="Paint Correction"
+          className="h-[30px] sm:h-[32px] w-auto object-contain select-none"
+          loading="lazy"
+        />
       );
     case 'ceramic-protection':
       return (

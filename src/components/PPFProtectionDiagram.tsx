@@ -89,14 +89,14 @@ const PPFProtectionDiagram: React.FC = () => (
     {/* Legend — bottom-left, subtle and technical */}
     <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-5 flex flex-wrap items-center gap-3 sm:gap-5">
       <div className="flex items-center gap-1.5">
-        <span className="w-2 h-2 bg-[#e31b23] rounded-[1px] flex-shrink-0" aria-hidden="true" />
-        <span className="text-[10px] font-medium tracking-[0.1em] text-[#8a8a94] uppercase">
+        <span className="w-2 h-2 bg-[#25D366] rounded-[1px] flex-shrink-0" aria-hidden="true" />
+        <span className="text-[10px] font-medium tracking-[0.1em] text-[#A1A1AA] uppercase">
           Zone A (Critical)
         </span>
       </div>
       <div className="flex items-center gap-1.5">
-        <span className="w-2 h-2 bg-[#8a1a1a] rounded-[1px] flex-shrink-0" aria-hidden="true" />
-        <span className="text-[10px] font-medium tracking-[0.1em] text-[#8a8a94] uppercase">
+        <span className="w-2 h-2 bg-[#128C7E] rounded-[1px] flex-shrink-0" aria-hidden="true" />
+        <span className="text-[10px] font-medium tracking-[0.1em] text-[#A1A1AA] uppercase">
           Zone B (High Impact)
         </span>
       </div>

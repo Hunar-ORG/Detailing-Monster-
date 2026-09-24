@@ -11,22 +11,22 @@ interface PPFZoneCardProps {
 }
 
 const PPFZoneCard: React.FC<PPFZoneCardProps> = ({ zone }) => (
-  <div className="flex items-center gap-4 bg-[#0f0f12] border border-white/[0.08] rounded-[5px] px-4 py-4 hover:border-white/[0.14] transition-colors duration-300">
-    {/* Red circular badge */}
+  <div className="flex items-center gap-4 bg-[#0D0D0F] border border-white/[0.08] rounded-[5px] px-4 py-4 hover:border-white/[0.14] transition-colors duration-300">
+    {/* Green circular badge */}
     <div
-      className="w-8 h-8 rounded-full bg-[#e31b23] flex items-center justify-center flex-shrink-0"
+      className="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center flex-shrink-0"
       aria-hidden="true"
     >
-      <span className="text-white text-[12px] font-bold leading-none">
+      <span className="text-[#050505] text-[12px] font-extrabold leading-none">
         {zone.badge}
       </span>
     </div>
     {/* Text */}
     <div className="min-w-0">
-      <p className="text-[13.5px] font-semibold text-[#f4f4f6] leading-snug mb-0.5">
+      <p className="text-[13.5px] font-semibold text-[#FFFFFF] leading-snug mb-0.5">
         {zone.title}
       </p>
-      <p className="text-[12.5px] text-[#8a8a94] leading-relaxed">
+      <p className="text-[12.5px] text-[#A1A1AA] leading-relaxed">
         {zone.description}
       </p>
     </div>

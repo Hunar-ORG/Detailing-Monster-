@@ -18,8 +18,8 @@
   }
 
   body {
-    background-color: #09090b;
-    color: #f4f4f6;
+    background-color: #050505;
+    color: #FFFFFF;
     font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
@@ -64,4 +64,14 @@
       padding-right: 1.25rem;
     }
   }
+
+  /* ── PPF Install Custom Cutter Icon Controls ───────────────────────── */
+  .ppf-install-icon {
+    --ppf-icon-shift-x: -15%;
+    --ppf-icon-shift-y: 0px;
+    --ppf-icon-height: 125px;
+    height: var(--ppf-icon-height, 125px);
+    transform: translateX(var(--ppf-icon-shift-x, -30%)) translateY(var(--ppf-icon-shift-y, 0px));
+  }
 }
+

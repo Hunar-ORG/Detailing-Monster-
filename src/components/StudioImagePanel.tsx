@@ -3,7 +3,7 @@ import { studioConfig } from '../data/studioConfig';
 
 const StudioImagePanel: React.FC = () => {
   return (
-    <div className="relative overflow-hidden rounded-[10px] border border-white/[0.08] aspect-[4/3] sm:aspect-[16/11] bg-[#0d0d10] flex flex-col justify-end group">
+    <div className="relative overflow-hidden rounded-[10px] border border-white/[0.08] aspect-[4/3] sm:aspect-[16/11] bg-[#0D0D0F] flex flex-col justify-end group">
       {/* Studio Photograph */}
       <img
         src={studioConfig.facilityImage}
@@ -15,7 +15,7 @@ const StudioImagePanel: React.FC = () => {
 
       {/* Subtle bottom gradient overlay */}
       <div
-        className="absolute inset-0 bg-gradient-to-t from-[#09090b]/90 via-[#09090b]/30 to-transparent pointer-events-none"
+        className="absolute inset-0 bg-gradient-to-t from-[#050505]/90 via-[#050505]/30 to-transparent pointer-events-none"
         aria-hidden="true"
       />
 

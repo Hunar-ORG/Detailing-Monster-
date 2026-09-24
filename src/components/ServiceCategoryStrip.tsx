@@ -15,7 +15,7 @@ const ServiceCategoryStrip: React.FC = () => {
               </span>
               {index < serviceCategories.length - 1 && (
                 <span
-                  className="w-1 h-1 rounded-full bg-[#e31b23] mx-3 flex-shrink-0"
+                  className="w-1 h-1 rounded-full bg-[#25D366] mx-3 flex-shrink-0"
                   aria-hidden="true"
                 />
               )}
@@ -25,8 +25,8 @@ const ServiceCategoryStrip: React.FC = () => {
 
         {/* Right: since year */}
         <div className="flex flex-col items-start sm:items-end gap-0.5 flex-shrink-0">
-          <span className="text-[11px] font-bold tracking-[0.16em] text-[#e31b23] uppercase">
-            SINCE 2018
+          <span className="text-[11px] font-bold tracking-[0.16em] text-[#25D366] uppercase">
+            SINCE 2025
           </span>
           <span className="text-[11.5px] text-text-secondary">
             Serving Automotive Enthusiasts in Karnataka

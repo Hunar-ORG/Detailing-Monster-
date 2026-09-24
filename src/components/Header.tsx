@@ -70,7 +70,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#09090b]/98 backdrop-blur-md shadow-lg shadow-black/40' : 'bg-[#09090b]/90 backdrop-blur-sm'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#050505]/98 backdrop-blur-md shadow-lg shadow-black/40' : 'bg-[#050505]/90 backdrop-blur-sm'
         } border-b border-white/[0.06]`}
     >
       <div className="container-site">
@@ -86,9 +86,13 @@ const Header: React.FC = () => {
             className="flex items-center gap-1.5 flex-shrink-0 cursor-pointer"
             aria-label="DETAILING MONSTER home"
           >
-            <span className="text-[15px] font-bold tracking-[0.04em] text-white">DETAILING</span>
-            <span className="text-[15px] font-bold tracking-[0.04em] text-[#e31b23]">MONSTER</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-[#e31b23] ml-0.5 flex-shrink-0" />
+            <span className="text-[22px] font-bold tracking-[0.04em] text-white">DETAILING</span>
+            <span className="text-[22px] font-bold tracking-[0.04em] text-[#25D366]">MONSTER</span>
+            <img
+              src="/logo.png"
+              alt="Detailing Monster logo mark"
+              className="w-[45px] h-[45px] object-contain flex-shrink-0 select-none ml-0.5"
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -127,7 +131,7 @@ const Header: React.FC = () => {
 
           {/* Mobile menu button — 44x44px accessible touch target */}
           <button
-            className="lg:hidden w-11 h-11 -mr-2 flex flex-col items-center justify-center gap-[5px] z-50 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#e31b23] rounded-[3px]"
+            className="lg:hidden w-11 h-11 -mr-2 flex flex-col items-center justify-center gap-[5px] z-50 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] rounded-[3px]"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={menuOpen}
@@ -152,7 +156,7 @@ const Header: React.FC = () => {
       {/* Mobile nav drawer with scroll support for short screens */}
       <div
         id="mobile-nav"
-        className={`lg:hidden fixed inset-0 top-[52px] bg-[#09090b] overflow-y-auto max-h-[calc(100vh-52px)] transition-all duration-300 ${menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        className={`lg:hidden fixed inset-0 top-[52px] bg-[#050505] overflow-y-auto max-h-[calc(100vh-52px)] transition-all duration-300 ${menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
           }`}
         aria-hidden={!menuOpen}
       >
@@ -164,7 +168,7 @@ const Header: React.FC = () => {
               href={`tel:${studioConfig.phone.replace(/\s+/g, '')}`}
               className="flex items-center gap-2.5 text-[#f4f4f6] hover:text-white transition-colors py-1.5"
             >
-              <div className="w-7 h-7 rounded-full bg-white/[0.06] border border-white/10 flex items-center justify-center text-[#e31b23] flex-shrink-0">
+              <div className="w-7 h-7 rounded-full bg-white/[0.06] border border-white/10 flex items-center justify-center text-[#25D366] flex-shrink-0">
                 <svg
                   className="w-3.5 h-3.5"
                   viewBox="0 0 24 24"
@@ -202,7 +206,7 @@ const Header: React.FC = () => {
               <a
                 href="#reserve"
                 onClick={handleLinkClick}
-                className="w-full inline-flex items-center justify-center px-5 py-3.5 bg-[#e31b23] hover:bg-[#c8171e] text-white text-[12px] font-bold tracking-[0.1em] uppercase rounded-[3px] transition-colors mt-2"
+                className="w-full inline-flex items-center justify-center px-5 py-3.5 bg-[#25D366] hover:bg-[#20BD5A] text-[#050505] text-[12px] font-extrabold tracking-[0.1em] uppercase rounded-[3px] transition-colors mt-2"
               >
                 BOOK APPOINTMENT
               </a>
@@ -210,7 +214,7 @@ const Header: React.FC = () => {
               <Link
                 to="/#reserve"
                 onClick={handleLinkClick}
-                className="w-full inline-flex items-center justify-center px-5 py-3.5 bg-[#e31b23] hover:bg-[#c8171e] text-white text-[12px] font-bold tracking-[0.1em] uppercase rounded-[3px] transition-colors mt-2"
+                className="w-full inline-flex items-center justify-center px-5 py-3.5 bg-[#25D366] hover:bg-[#20BD5A] text-[#050505] text-[12px] font-extrabold tracking-[0.1em] uppercase rounded-[3px] transition-colors mt-2"
               >
                 BOOK APPOINTMENT
               </Link>

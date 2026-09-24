@@ -17,7 +17,7 @@ const ProcessStep: React.FC<ProcessStepProps> = ({ step, isLast }) => (
     <div className="flex items-center mb-5">
       {/* Circle node */}
       <div
-        className="w-9 h-9 flex-shrink-0 rounded-full border-2 border-[#e31b23] bg-[#09090b] flex items-center justify-center z-10"
+        className="w-9 h-9 flex-shrink-0 rounded-full border-2 border-[#25D366] bg-[#050505] flex items-center justify-center z-10"
         aria-hidden="true"
       >
         <span className="text-[11px] font-bold text-white tracking-[0.06em]">
@@ -30,18 +30,18 @@ const ProcessStep: React.FC<ProcessStepProps> = ({ step, isLast }) => (
         <div className="flex-1 h-px ml-0 relative overflow-hidden">
           {/* Base line */}
           <div className="absolute inset-0 bg-white/[0.1]" />
-          {/* Red accent portion */}
-          <div className="absolute inset-y-0 left-0 w-1/2 bg-[#e31b23]/60" />
+          {/* Green accent portion */}
+          <div className="absolute inset-y-0 left-0 w-1/2 bg-[#25D366]/60" />
         </div>
       )}
     </div>
 
     {/* ── Step text ──────────────────────────────────────────────────── */}
     <div className="pr-4 lg:pr-6">
-      <h3 className="text-[14.5px] font-semibold text-[#f4f4f6] mb-2 leading-snug">
+      <h3 className="text-[14.5px] font-semibold text-[#FFFFFF] mb-2 leading-snug">
         {step.title}
       </h3>
-      <p className="text-[12.5px] text-[#8a8a94] leading-[1.65]">
+      <p className="text-[12.5px] text-[#A1A1AA] leading-[1.65]">
         {step.description}
       </p>
     </div>
@@ -54,13 +54,13 @@ const ProcessStepMobile: React.FC<ProcessStepProps> = ({ step, isLast }) => (
   <div className="flex gap-4">
     {/* Left: circle + vertical connector */}
     <div className="flex flex-col items-center flex-shrink-0">
-      <div className="w-9 h-9 rounded-full border-2 border-[#e31b23] bg-[#09090b] flex items-center justify-center z-10">
+      <div className="w-9 h-9 rounded-full border-2 border-[#25D366] bg-[#050505] flex items-center justify-center z-10">
         <span className="text-[11px] font-bold text-white tracking-[0.06em]">
           {step.number}
         </span>
       </div>
       {!isLast && (
-        <div className="flex-1 w-px bg-[#e31b23]/40 mt-2 min-h-[40px]" />
+        <div className="flex-1 w-px bg-[#25D366]/40 mt-2 min-h-[40px]" />
       )}
     </div>
 

@@ -26,20 +26,20 @@ const ServicesSection: React.FC = () => {
   return (
     <section
       id="services"
-      className="container-site pt-20 pb-20 scroll-mt-16"
+      className="container-site pt-20 pb-20 sm:pb-24 scroll-mt-16"
       aria-label="Services Overview"
     >
       {/* Section label */}
       <div className="flex items-center gap-2 mb-8">
-        <span className="w-2.5 h-2.5 bg-[#e31b23] flex-shrink-0" aria-hidden="true" />
-        <span className="text-micro text-[#8a8a94] tracking-[0.18em]">OUR SERVICES</span>
+        <span className="w-2.5 h-2.5 bg-[#25D366] flex-shrink-0" aria-hidden="true" />
+        <span className="text-micro text-[#A1A1AA] tracking-[0.18em]">OUR SERVICES</span>
       </div>
 
       {/* Intro */}
       <ServiceIntro />
 
       {/* Cards grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-5 xl:gap-6">
         {serviceCards.map((card) => (
           <ServiceCard key={card.id} card={card} />
         ))}

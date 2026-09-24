@@ -5,7 +5,7 @@ const FinalCTA: React.FC = () => {
   return (
     <section
       id="final-cta"
-      className="relative overflow-hidden w-full py-24 sm:py-28 lg:py-32 bg-[#09090b] flex items-center justify-center text-center scroll-mt-16"
+      className="relative overflow-hidden w-full py-24 sm:py-28 lg:py-32 bg-[#050505] flex items-center justify-center text-center scroll-mt-16"
       aria-labelledby="final-cta-heading"
     >
       {/* ── Cinematic Automotive Background Image ───────────────────────── */}
@@ -19,11 +19,11 @@ const FinalCTA: React.FC = () => {
 
       {/* ── Dark Overlays for Strong Text Readability & Edge Vignette ────── */}
       <div
-        className="absolute inset-0 bg-gradient-to-b from-[#09090b]/85 via-[#09090b]/40 to-[#09090b]/90 pointer-events-none"
+        className="absolute inset-0 bg-gradient-to-b from-[#050505]/85 via-[#050505]/40 to-[#050505]/90 pointer-events-none"
         aria-hidden="true"
       />
       <div
-        className="absolute inset-0 bg-gradient-to-r from-[#09090b]/80 via-transparent to-[#09090b]/80 pointer-events-none"
+        className="absolute inset-0 bg-gradient-to-r from-[#050505]/80 via-transparent to-[#050505]/80 pointer-events-none"
         aria-hidden="true"
       />
 
@@ -31,8 +31,8 @@ const FinalCTA: React.FC = () => {
       <div className="container-site relative z-10 max-w-3xl mx-auto px-4 sm:px-6">
         {/* Micro label */}
         <div className="flex items-center justify-center gap-2 mb-4">
-          <span className="w-2 h-2 bg-[#e31b23] flex-shrink-0" aria-hidden="true" />
-          <span className="text-[10.5px] font-semibold tracking-[0.2em] text-[#a1a1aa] uppercase">
+          <span className="w-2 h-2 bg-[#25D366] flex-shrink-0" aria-hidden="true" />
+          <span className="text-[10.5px] font-semibold tracking-[0.2em] text-[#A1A1AA] uppercase">
             UNCOMPROMISING RESULTS
           </span>
         </div>

@@ -142,8 +142,8 @@ export const EngineeredMethodSection: React.FC = () => (
     <div className="container-site text-center mb-14 lg:mb-16">
       {/* Micro label — centered */}
       <div className="flex items-center justify-center gap-2 mb-6">
-        <span className="w-2.5 h-2.5 bg-[#e31b23] flex-shrink-0" aria-hidden="true" />
-        <span className="text-[10.5px] font-semibold tracking-[0.18em] text-[#8a8a94] uppercase">
+        <span className="w-2.5 h-2.5 bg-[#25D366] flex-shrink-0" aria-hidden="true" />
+        <span className="text-[10.5px] font-semibold tracking-[0.18em] text-[#A1A1AA] uppercase">
           Engineered Method
         </span>
       </div>

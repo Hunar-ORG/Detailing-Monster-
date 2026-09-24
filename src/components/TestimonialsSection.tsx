@@ -13,8 +13,8 @@ const TestimonialsSection: React.FC = () => {
       <div className="text-center mb-12 sm:mb-14 max-w-4xl mx-auto">
         {/* Micro label */}
         <div className="flex items-center justify-center gap-2 mb-4">
-          <span className="w-2 h-2 bg-[#e31b23] flex-shrink-0" aria-hidden="true" />
-          <span className="text-[10.5px] font-semibold tracking-[0.2em] text-[#8a8a94] uppercase">
+          <span className="w-2 h-2 bg-[#25D366] flex-shrink-0" aria-hidden="true" />
+          <span className="text-[10.5px] font-semibold tracking-[0.2em] text-[#A1A1AA] uppercase">
             TESTIMONIALS
           </span>
         </div>

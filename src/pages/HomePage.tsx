@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
-import StatsPanel from '../components/StatsPanel';
+
 import ServiceCategoryStrip from '../components/ServiceCategoryStrip';
 import ServicesSection from '../components/ServicesSection';
 import { ServiceShowcaseContent } from './ServiceShowcasePage';
@@ -20,7 +20,7 @@ const HomePage: React.FC = () => (
     {/* ── Page 1 ─────────────────────────────────── */}
     {/* HeroSection has pt-[52px] built in to clear the fixed header */}
     <HeroSection />
-    <StatsPanel />
+
     <ServiceCategoryStrip />
     <ServicesSection />
 
@@ -33,13 +33,13 @@ const HomePage: React.FC = () => (
     {/* ── Page 4: Visual Shift + Engineered Method ──── */}
     <Page4Content />
 
-    {/* ── Page 5: The Standard + Our Portfolio ─────── */}
+    {/* ── Page 5: Our Portfolio ───────────────────── */}
     <Page5Content />
 
     {/* ── Page 6: Testimonials + Reserve Your Detail ─ */}
     <Page6Content />
 
-    {/* ── Page 7: Studio Access + Common Inquiries ─── */}
+    {/* ── Page 7: Studio Access ─────────────────────── */}
     <Page7Content />
 
     {/* ── Page 8: Final CTA ────────────────────────── */}

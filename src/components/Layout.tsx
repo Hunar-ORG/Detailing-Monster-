@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import { Outlet } from 'react-router-dom';
 
 const Layout: React.FC = () => (
-  <div className="min-h-screen bg-[#09090b] flex flex-col">
+  <div className="min-h-screen bg-[#050505] flex flex-col">
     <Header />
     <div className="flex-1">
       <Outlet />

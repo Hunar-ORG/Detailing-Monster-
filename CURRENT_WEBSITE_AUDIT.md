@@ -31,7 +31,7 @@ This document provides a comprehensive, forensic, code-level discovery, audit, a
   2. *Stale Production Artifacts in `dist/`:* The `dist/` directory contains an old compiled build containing references to the previous template identity (*Blackline Auto*, *Islamabad*, *Pakistan*). If deployed from `dist/` without running `npm run build`, old template data would be served.
   3. *Heavy Image Payload:* ~8.2 MB of uncompressed JPEG assets served directly from `/public` without modern WebP/AVIF formats or responsive image `srcset` tags.
   4. *Dependency Mismatch:* `@types/react-router-dom` v5.3.3 is errantly installed under `dependencies` in `package.json` while `react-router-dom` v7.18.4 is the active router.
-- **Biggest Missing Client Information:** Real customer reviews, genuine studio/portfolio vehicle photography, verification of claimed statistics ("Since 2018", "500+ vehicles", "98% satisfaction"), live social media URLs, official business email domain verification, and backend lead delivery destination (email/WhatsApp/CRM).
+- **Biggest Missing Client Information:** Real customer reviews, genuine studio/portfolio vehicle photography, verification of claimed statistics ("Since 2025", "500+ vehicles", "98% satisfaction"), live social media URLs, official business email domain verification, and backend lead delivery destination (email/WhatsApp/CRM).
 
 ---
 
@@ -288,7 +288,7 @@ The primary landing page (`src/pages/HomePage.tsx`) orchestrates all 13 major se
 
 #### Service Category Strip (`src/components/ServiceCategoryStrip.tsx` & `src/data/siteData.ts`)
 - Categories: `PAINT CORRECTION` · `CERAMIC COATING` · `PPF` · `INTERIOR DETAILING`
-- Heritage Badge: `SINCE 2018` — `Serving Automotive Enthusiasts in Karnataka`
+- Heritage Badge: `SINCE 2025` — `Serving Automotive Enthusiasts in Karnataka`
 
 #### Services Overview (`src/components/ServicesSection.tsx` & `src/data/siteData.ts`)
 - Section Label: `OUR SERVICES`
@@ -496,7 +496,7 @@ A rigorous global search of the entire project repository was performed to disco
 | **Phone Number** | `+91 99452 28752` | `studioConfig.ts`, `Header.tsx` | Client-specific | Verified |
 | **Official Email** | `studio@detailingmonster.com` | `studioConfig.ts`, `Footer.tsx` | Placeholder / Proposed | **YES** (Confirm if active) |
 | **Business Hours** | `Mon - Sat: 9:00 AM - 7:00 PM` | `studioConfig.ts` | Template / Demo | **YES** (Confirm operational hours) |
-| **Founded Year** | `SINCE 2018` | `ServiceCategoryStrip.tsx` | Template / Demo | **YES** (Confirm year established) |
+| **Founded Year** | `SINCE 2025` | `ServiceCategoryStrip.tsx` | Template / Demo | **YES** (Confirm year established) |
 | **Vehicles Count** | `500+ VEHICLES DETAILED` | `siteData.ts` | Template / Demo | **YES** (Confirm accuracy) |
 | **Satisfaction Metric** | `98% SATISFACTION` | `siteData.ts` | Template / Demo | **YES** (Confirm claim or adjust) |
 | **Years of Expertise** | `7+ YEARS EXPERTISE` | `siteData.ts` | Template / Demo | **YES** (Confirm accuracy) |
@@ -565,7 +565,7 @@ A rigorous global search of the entire project repository was performed to disco
 | **`SpecificationGrid`** | `src/components/ui/ServicePrimitives.tsx` | 3-box technical specification row | **Yes** | Driven by `SpecCardData[]` | Card styling & fonts |
 | **`HeroSection`** | `src/components/HeroSection.tsx` | Cinematic hero intro banner | No | No (Hardcoded in TSX) | Headings, copy, background |
 | **`StatsPanel`** | `src/components/StatsPanel.tsx` | 3-column stats bar | **Yes** | Driven by `stats` in `siteData.ts` | Layout borders & red styling |
-| **`ServiceCategoryStrip`**| `src/components/ServiceCategoryStrip.tsx`| Category tag strip | No | Partial (`siteData.ts`) | "SINCE 2018", "Karnataka" |
+| **`ServiceCategoryStrip`**| `src/components/ServiceCategoryStrip.tsx`| Category tag strip | No | Partial (`siteData.ts`) | "SINCE 2025", "Karnataka" |
 | **`ServicesSection`** | `src/components/ServicesSection.tsx` | 4-card service overview | No | Partial (`siteData.ts`) | Intro heading & paragraph |
 | **`ServiceCard`** | `src/components/ServiceCard.tsx` | Individual service card | **Yes** | Driven by `card` prop | Card background & border |
 | **`ServiceIcon`** | `src/components/ServiceIcon.tsx` | SVG icon selector | **Yes** | Driven by `type` prop | SVG paths & red accent color |
@@ -613,7 +613,7 @@ src/data/
   - FAQs and testimonials are centralized in `page7Data.ts` and `page6Data.ts`.
 - **Duplicated / Bypassed Centralization:**
   - `HeroSection.tsx` hardcodes `"in Mysuru"` directly in JSX.
-  - `ServiceCategoryStrip.tsx` hardcodes `"SINCE 2018"` and `"Serving Automotive Enthusiasts in Karnataka"`.
+  - `ServiceCategoryStrip.tsx` hardcodes `"SINCE 2025"` and `"Serving Automotive Enthusiasts in Karnataka"`.
   - `StudioAccessSection.tsx` hardcodes `"Located in Saraswathipuram, Mysuru, near the Central Library"`.
   - `Footer.tsx` hardcodes `"We are Karnataka’s elite choice..."` directly in JSX.
   - `index.html` hardcodes business name, telephone, address, and JSON-LD independently from `studioConfig.ts`.
@@ -986,7 +986,7 @@ The project operates as a **Hybrid SPA**:
 | Content Item | Stored Location | Priority for Centralization |
 | :--- | :--- | :--- |
 | **City Name ("in Mysuru")** | `src/components/HeroSection.tsx` (Line 53) | **HIGH** |
-| **Heritage Badge ("SINCE 2018", "in Karnataka")** | `src/components/ServiceCategoryStrip.tsx` (Lines 29, 32) | **HIGH** |
+| **Heritage Badge ("SINCE 2025", "in Karnataka")** | `src/components/ServiceCategoryStrip.tsx` (Lines 29, 32) | **HIGH** |
 | **Facility Description Text** | `src/components/StudioAccessSection.tsx` (Line 36) | **HIGH** |
 | **Footer Brand Description** | `src/components/Footer.tsx` (Line 105) | **HIGH** |
 | **Hero Headline & Description** | `src/components/HeroSection.tsx` (Lines 46–54) | **MEDIUM** |
@@ -1008,7 +1008,7 @@ The project operates as a **Hybrid SPA**:
 | **Operating Hours** | `studioConfig.ts` | Unverified | **YES** | Official operating schedule |
 | **Hero Image** | `public/hero-car.jpg` | Stock Photo | Optional | High-res studio shot of customer vehicle |
 | **Stats (500+, 98%, 7+)** | `siteData.ts` | Unverified | **YES** | Real numbers or adjust to verifiable copy |
-| **Since 2018 Badge** | `ServiceCategoryStrip.tsx` | Unverified | **YES** | Actual founding year of Detailing Monster |
+| **Since 2025 Badge** | `ServiceCategoryStrip.tsx` | Unverified | **YES** | Actual founding year of Detailing Monster |
 | **Ceramic Specs (9H, 110°, 5YR)**| `ServiceShowcasePage.tsx` | Vendor claim | **YES** | Exact specifications of coatings applied |
 | **PPF Warranty (10 YR)** | `page7Data.ts` | Vendor claim | **YES** | Exact manufacturer warranty terms |
 | **Testimonials (Daniel, Michael, Ahmed)**| `page6Data.ts` | Demo data | **YES** | 3 authentic reviews from real clients |
@@ -1028,7 +1028,7 @@ The following checklist must be provided to the client to transform this website
 - [ ] **Official Email:** Is `studio@detailingmonster.com` registered and active, or should inquiries go to another address (e.g. Gmail / business domain)?
 - [ ] **WhatsApp Business Number:** Provide the WhatsApp phone number to enable direct instant chat lead generation.
 - [ ] **Operating Hours:** Confirm exact opening hours (currently stated as `Mon - Sat: 9:00 AM - 7:00 PM; Closed Sunday`).
-- [ ] **Founding Year:** Confirm the actual year the business was established (currently stated as `SINCE 2018`).
+- [ ] **Founding Year:** Confirm the actual year the business was established (currently stated as `SINCE 2025`).
 - [ ] **Google Business Profile Link:** Provide the direct Google Maps CID or Share link for the Saraswathipuram location.
 
 ### 2. Services, Products & Warranties
@@ -1072,7 +1072,7 @@ The following checklist must be provided to the client to transform this website
 | :- | :--- | :--- | :--- | :--- | :--- |
 | **R-01** | **Customer Lead Loss** | `appointmentService.ts` | Users fill the form expecting a callback; no email or webhook is sent. | **CRITICAL** | Integrate Email API (Resend/SendGrid) or WhatsApp direct dispatch. |
 | **R-02** | **Accidental Re-Deployment of Old Template** | `dist/` folder | Deploying without re-running `npm run build` serves old Blackline Auto data. | **CRITICAL** | Run `npm run build` or add `dist` to `.gitignore`. |
-| **R-03** | **Consumer Protection / False Advertising Claims** | `siteData.ts`, `page7Data.ts` | Making specific claims ("500+ cars", "Since 2018", "10-Year Warranty") without proof can lead to legal/reputational risks. | **HIGH** | Obtain written client confirmation for all metrics and warranties. |
+| **R-03** | **Consumer Protection / False Advertising Claims** | `siteData.ts`, `page7Data.ts` | Making specific claims ("500+ cars", "Since 2025", "10-Year Warranty") without proof can lead to legal/reputational risks. | **HIGH** | Obtain written client confirmation for all metrics and warranties. |
 | **R-04** | **Mobile Data / Bounce Rate Risk** | `public/*.jpg` | Loading 8.2MB on cellular data increases bounce rate and reduces Google PageSpeed score. | **HIGH** | Convert images to WebP/AVIF format and generate responsive `srcset` resolutions. |
 | **R-05** | **Social Link Disconnection** | `page8Data.ts` | Footer social icons navigate away from the site to platform homepages instead of the studio's page. | **MEDIUM** | Update URLs to verified studio social handles. |
 

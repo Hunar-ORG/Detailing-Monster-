@@ -5,7 +5,7 @@ const ReservationSection: React.FC = () => {
   return (
     <section
       id="reserve"
-      className="bg-[#131317] border-t border-white/[0.06] py-20 lg:py-24 scroll-mt-16"
+      className="bg-[#111113] border-t border-white/[0.06] py-20 lg:py-24 scroll-mt-16"
       aria-labelledby="reservation-heading"
     >
       {/* Backward compatible anchor alias */}
@@ -17,8 +17,8 @@ const ReservationSection: React.FC = () => {
           <div className="lg:col-span-5">
             {/* Micro label */}
             <div className="flex items-center gap-2 mb-3">
-              <span className="w-2 h-2 bg-[#e31b23] flex-shrink-0" aria-hidden="true" />
-              <span className="text-[10.5px] font-semibold tracking-[0.2em] text-[#8a8a94] uppercase">
+              <span className="w-2 h-2 bg-[#25D366] flex-shrink-0" aria-hidden="true" />
+              <span className="text-[10.5px] font-semibold tracking-[0.2em] text-[#A1A1AA] uppercase">
                 RESERVE YOUR DETAIL
               </span>
             </div>
@@ -33,7 +33,7 @@ const ReservationSection: React.FC = () => {
             </h2>
 
             {/* Description */}
-            <p className="text-[13.5px] sm:text-[14px] text-[#8a8a94] leading-[1.7] max-w-[420px] mb-8">
+            <p className="text-[13.5px] sm:text-[14px] text-[#A1A1AA] leading-[1.7] max-w-[420px] mb-8">
               Tell us about your machine and we will build a custom correction or
               protection plan. Slots are limited to maintain our strict quality timelines.
             </p>
@@ -42,9 +42,9 @@ const ReservationSection: React.FC = () => {
             <div className="space-y-3.5">
               {/* Benefit 1 */}
               <div className="flex items-center gap-3">
-                <div className="w-4 h-4 rounded-full border border-[#e31b23] flex items-center justify-center flex-shrink-0">
+                <div className="w-4 h-4 rounded-full border border-[#25D366] flex items-center justify-center flex-shrink-0">
                   <svg
-                    className="w-2.5 h-2.5 text-[#e31b23]"
+                    className="w-2.5 h-2.5 text-[#25D366]"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -63,9 +63,9 @@ const ReservationSection: React.FC = () => {
 
               {/* Benefit 2 */}
               <div className="flex items-center gap-3">
-                <div className="w-4 h-4 rounded-full border border-[#e31b23] flex items-center justify-center flex-shrink-0">
+                <div className="w-4 h-4 rounded-full border border-[#25D366] flex items-center justify-center flex-shrink-0">
                   <svg
-                    className="w-2.5 h-2.5 text-[#e31b23]"
+                    className="w-2.5 h-2.5 text-[#25D366]"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"

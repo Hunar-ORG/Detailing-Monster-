@@ -49,7 +49,7 @@ export const studioConfig: StudioConfig = {
   email: 'studio@detailingmonster.com',
   hours: 'Mon - Sat: 9:00 AM - 7:00 PM',
   directionsUrl:
-    'https://maps.google.com/?q=4th+Main,+Maruthi+Temple+Road,+Saraswathipuram,+Mysuru,+Karnataka+570009',
+    'https://maps.app.goo.gl/Yjsw8bhRVd36KbwT9',
   facilityTitle: 'Cleanroom Detailing Lab',
   facilityDescription:
     'Equipped with precision lighting array and heavy-duty dust scrubber system.',

@@ -10,7 +10,7 @@ const StarRating: React.FC<{ count?: number }> = ({ count = 5 }) => (
     {Array.from({ length: count }).map((_, i) => (
       <svg
         key={i}
-        className="w-3.5 h-3.5 text-[#e31b23]"
+        className="w-3.5 h-3.5 text-[#25D366]"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -27,7 +27,7 @@ const StarRating: React.FC<{ count?: number }> = ({ count = 5 }) => (
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
   return (
-    <div className="bg-[#101013] border border-white/[0.07] rounded-[10px] p-6 sm:p-8 flex flex-col justify-between hover:border-white/[0.14] transition-all duration-300 min-h-[260px]">
+    <div className="bg-[#0D0D0F] border border-white/[0.07] rounded-[10px] p-6 sm:p-8 flex flex-col justify-between hover:border-white/[0.14] transition-all duration-300 min-h-[260px]">
       {/* 5 red outlined stars */}
       <div>
         <StarRating count={testimonial.rating} />

@@ -20,13 +20,6 @@ export interface ServiceCard {
   description: string;
 }
 
-export interface StandardPrinciple {
-  id: string;
-  number: string;
-  title: string;
-  description: string;
-}
-
 export interface PortfolioVehicle {
   id: string;
   vehicle: string;
@@ -60,12 +53,6 @@ export interface StudioLocationInfo {
   hours: string;
   phone: string;
   directionsUrl: string;
-}
-
-export interface FAQItemData {
-  id: string;
-  question: string;
-  answer: string;
 }
 
 export interface FooterLinkItem {

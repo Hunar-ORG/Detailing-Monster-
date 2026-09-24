@@ -17,8 +17,8 @@ const StudioAccessSection: React.FC = () => {
         {/* Left Column: Micro label + Main heading */}
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <span className="w-2 h-2 bg-[#e31b23] flex-shrink-0" aria-hidden="true" />
-            <span className="text-[10.5px] font-semibold tracking-[0.2em] text-[#8a8a94] uppercase">
+            <span className="w-2 h-2 bg-[#25D366] flex-shrink-0" aria-hidden="true" />
+            <span className="text-[10.5px] font-semibold tracking-[0.2em] text-[#A1A1AA] uppercase">
               STUDIO ACCESS
             </span>
           </div>
@@ -40,7 +40,7 @@ const StudioAccessSection: React.FC = () => {
       </div>
 
       {/* ── Matched Visual Panels: Map + Studio Photo ───────────────────── */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 w-full min-w-0">
         <LocationMapPanel />
         <StudioImagePanel />
       </div>

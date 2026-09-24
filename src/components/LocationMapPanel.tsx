@@ -3,89 +3,42 @@ import { studioConfig } from '../data/studioConfig';
 
 const LocationMapPanel: React.FC = () => {
   return (
-    <div className="relative overflow-hidden rounded-[10px] border border-white/[0.08] bg-[#666970] aspect-[4/3] sm:aspect-[16/11] flex items-center justify-center">
-      {/* ── Technical Minimalist Map SVG Background ─────────────────────── */}
-      <svg
-        className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
-        viewBox="0 0 600 420"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
+    <div className="relative w-full min-w-0 max-w-full overflow-hidden rounded-[10px] border border-white/[0.08] bg-[#111113] aspect-[4/3] sm:aspect-[16/11] flex items-center justify-center group">
+      {/* ── Actual Google Maps Screenshot Image Link ─────────────────────── */}
+      <a
+        href={studioConfig.directionsUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute inset-0 w-full h-full block cursor-pointer z-0"
+        aria-label="Open Detailing Monster on Google Maps"
+        id="location-map-link"
       >
-        {/* Background Canvas */}
-        <rect width="600" height="420" fill="#696c73" />
-
-        {/* Top-Right Topographic Elevation Contours */}
-        <g stroke="#53565e" strokeWidth="1.2" opacity="0.65" fill="none">
-          <path d="M 280,0 Q 320,30 360,25 T 450,45 T 550,20 T 600,35" />
-          <path d="M 270,15 Q 315,45 370,40 T 470,60 T 560,45 T 600,55" />
-          <path d="M 260,35 Q 310,65 385,55 T 490,80 T 570,75 T 600,85" />
-          <path d="M 255,55 Q 310,85 400,75 T 510,105 T 580,100 T 600,115" />
-          <path d="M 250,75 Q 320,105 420,95 T 530,130 T 600,140" />
-        </g>
-
-        {/* Spiderweb / Radial Road Network Centered at (295, 230) */}
-        <g stroke="#26282e" strokeWidth="1.6" opacity="0.9" fill="none">
-          {/* Concentric rings */}
-          <circle cx="295" cy="230" r="28" strokeWidth="1.8" />
-          <circle cx="295" cy="230" r="58" strokeWidth="1.6" />
-          <circle cx="295" cy="230" r="92" strokeWidth="1.6" />
-          <circle cx="295" cy="230" r="130" strokeWidth="1.4" />
-          <circle cx="295" cy="230" r="175" strokeWidth="1.2" />
-          <circle cx="295" cy="230" r="225" strokeWidth="1.2" />
-
-          {/* Radiating spoke highways */}
-          <line x1="295" y1="230" x2="295" y2="420" strokeWidth="2.4" />
-          <line x1="295" y1="230" x2="295" y2="0" strokeWidth="2.2" />
-          <line x1="295" y1="230" x2="600" y2="230" strokeWidth="2.4" />
-          <line x1="295" y1="230" x2="0" y2="230" strokeWidth="2.2" />
-          <line x1="295" y1="230" x2="520" y2="420" strokeWidth="2" />
-          <line x1="295" y1="230" x2="70" y2="420" strokeWidth="2" />
-          <line x1="295" y1="230" x2="110" y2="40" strokeWidth="2" />
-          <line x1="295" y1="230" x2="480" y2="45" strokeWidth="2" />
-          <line x1="295" y1="230" x2="0" y2="120" strokeWidth="1.8" />
-          <line x1="295" y1="230" x2="600" y2="140" strokeWidth="1.8" />
-          <line x1="295" y1="230" x2="0" y2="340" strokeWidth="1.8" />
-          <line x1="295" y1="230" x2="600" y2="320" strokeWidth="1.8" />
-
-          {/* Secondary cross-streets and geometric grid segments */}
-          <path d="M 180,140 L 410,140 L 410,320 L 180,320 Z" strokeWidth="1.4" />
-          <path d="M 120,80 L 470,80 L 470,380 L 120,380 Z" strokeWidth="1.2" />
-          <line x1="410" y1="140" x2="550" y2="140" strokeWidth="1.5" />
-          <line x1="470" y1="200" x2="580" y2="200" strokeWidth="1.5" />
-          <line x1="470" y1="280" x2="550" y2="280" strokeWidth="1.5" />
-          <line x1="550" y1="140" x2="550" y2="340" strokeWidth="1.8" />
-        </g>
-
-        {/* Red Location Pin at (295, 230) */}
-        <g transform="translate(283, 204)">
-          <ellipse cx="12" cy="27" rx="6" ry="2.5" fill="#141416" opacity="0.45" />
-          <path
-            d="M12 0C6.5 0 2 4.5 2 10C2 17.5 12 28 12 28C12 28 22 17.5 22 10C22 4.5 17.5 0 12 0Z"
-            fill="#e31b23"
-          />
-          <circle cx="12" cy="9.5" r="3.5" fill="#111114" />
-        </g>
-      </svg>
+        <img
+          src="/maps.png"
+          alt="Detailing Monster studio location on Google Maps"
+          className="w-full h-full object-cover object-center transition-transform duration-500 ease-out group-hover:scale-[1.02] select-none"
+          loading="lazy"
+        />
+      </a>
 
       {/* ── Overlay Location Information Card ────────────────────────────── */}
-      <div className="absolute top-4 left-4 sm:top-5 sm:left-5 z-10 bg-[#0d0d10]/95 border border-white/[0.08] rounded-[6px] p-4 sm:p-5 shadow-2xl max-w-[calc(100%-2rem)] sm:max-w-[270px] text-left backdrop-blur-sm">
-        <h3 className="text-white font-bold text-[14px] sm:text-[15px] tracking-tight">
+      <div className="absolute top-2.5 left-2.5 sm:top-5 sm:left-5 z-10 bg-[#0D0D0F]/95 border border-white/[0.08] rounded-[5px] sm:rounded-[6px] p-2.5 min-[360px]:p-3 sm:p-5 shadow-2xl w-[clamp(170px,52%,215px)] sm:w-auto sm:max-w-[270px] text-left backdrop-blur-sm pointer-events-auto">
+        <h3 className="text-white font-bold text-[clamp(11px,2.9vw,12.5px)] sm:text-[15px] tracking-tight leading-tight">
           {studioConfig.name}
         </h3>
-        <p className="text-[#a1a1aa] text-[11px] sm:text-[11.5px] leading-snug mt-1.5">
+        <p className="text-[#a1a1aa] text-[clamp(9px,2.3vw,10px)] sm:text-[11.5px] leading-tight sm:leading-snug mt-1 sm:mt-1.5">
           {studioConfig.street},<br />
           {studioConfig.locality},<br />
           {studioConfig.city}, {studioConfig.state} - {studioConfig.postalCode}
         </p>
-        <p className="text-[#e31b23] text-[10.5px] font-medium leading-snug mt-1">
+        <p className="text-[#25D366] text-[clamp(8.5px,2.1vw,9.5px)] sm:text-[10.5px] font-medium leading-tight sm:leading-snug mt-0.5 sm:mt-1">
           {studioConfig.landmark}
         </p>
 
         {/* Timings */}
-        <div className="flex items-center gap-2 mt-3 text-[#d4d4d8] text-[11px]">
+        <div className="flex items-center gap-1.5 sm:gap-2 mt-1.5 sm:mt-3 text-[#d4d4d8] text-[clamp(9px,2.3vw,10.2px)] sm:text-[11px] leading-tight">
           <svg
-            className="w-3.5 h-3.5 text-[#e31b23] flex-shrink-0"
+            className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#25D366] flex-shrink-0"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -101,9 +54,9 @@ const LocationMapPanel: React.FC = () => {
         </div>
 
         {/* Phone — 1-Tap Calling */}
-        <div className="flex items-center gap-2 mt-1.5 text-[#d4d4d8] text-[11px]">
+        <div className="flex items-center gap-1.5 sm:gap-2 mt-1 sm:mt-1.5 text-[#d4d4d8] text-[clamp(9px,2.3vw,10.2px)] sm:text-[11px] leading-tight">
           <svg
-            className="w-3.5 h-3.5 text-[#e31b23] flex-shrink-0"
+            className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#25D366] flex-shrink-0"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -127,7 +80,7 @@ const LocationMapPanel: React.FC = () => {
           href={studioConfig.directionsUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 w-full min-h-[42px] flex items-center justify-center bg-[#e31b23] hover:bg-[#c8171e] text-white text-[10.5px] font-bold tracking-[0.1em] uppercase py-2.5 px-3 rounded-[3px] text-center transition-colors shadow-sm cursor-pointer"
+          className="mt-2 sm:mt-4 w-full h-[28px] min-[360px]:h-[30px] sm:h-auto sm:min-h-[42px] flex items-center justify-center bg-[#25D366] hover:bg-[#20BD5A] text-[#050505] text-[clamp(8.5px,2.1vw,9.5px)] sm:text-[10.5px] font-extrabold tracking-[0.08em] sm:tracking-[0.1em] uppercase py-1 sm:py-2.5 px-2 sm:px-3 rounded-[3px] text-center transition-colors shadow-sm cursor-pointer select-none leading-none"
           id="get-directions-btn"
         >
           GET DIRECTIONS

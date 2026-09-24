@@ -110,30 +110,30 @@ const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
         decoding="async"
       />
 
-      {/* ── Vertical red divider line ─────────────────────────────────── */}
+      {/* ── Vertical green divider line ───────────────────────────────── */}
       <div
-        className="absolute top-0 bottom-0 w-px bg-[#e31b23] pointer-events-none"
+        className="absolute top-0 bottom-0 w-px bg-[#25D366] pointer-events-none"
         style={{ left: `${position}%` }}
         aria-hidden="true"
       >
         {/* Extended Touch Hit Area (44x44px invisible wrapper around visible handle) */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center pointer-events-auto cursor-col-resize">
-          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#e31b23] border-2 border-white/40 flex items-center justify-center shadow-lg shadow-black/50">
+          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#25D366] border-2 border-[#050505] flex items-center justify-center shadow-lg shadow-black/50">
             <svg width="10" height="8" viewBox="0 0 10 8" fill="none" aria-hidden="true">
-              <path d="M1 4h3M6 4h3" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
-              <path d="M3 2L1 4l2 2M7 2l2 2-2 2" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M1 4h3M6 4h3" stroke="#050505" strokeWidth="1.5" strokeLinecap="round" />
+              <path d="M3 2L1 4l2 2M7 2l2 2-2 2" stroke="#050505" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
       </div>
 
       {/* ── Before label — bottom-left ─────────────────────────────────── */}
-      <span className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 bg-[#e31b23] text-white text-[8.5px] sm:text-[9px] font-bold tracking-[0.14em] uppercase px-2 py-1 rounded-[2px] pointer-events-none shadow-sm">
+      <span className="absolute bottom-2.5 left-2.5 sm:bottom-3 sm:left-3 bg-[#25D366] text-[#050505] text-[8.5px] sm:text-[9px] font-extrabold tracking-[0.14em] uppercase px-2 py-1 rounded-[2px] pointer-events-none shadow-sm">
         {beforeLabel}
       </span>
 
       {/* ── After label — bottom-right ────────────────────────────────── */}
-      <span className="absolute bottom-2.5 right-2.5 sm:bottom-3 sm:right-3 bg-[#e31b23] text-white text-[8.5px] sm:text-[9px] font-bold tracking-[0.14em] uppercase px-2 py-1 rounded-[2px] pointer-events-none shadow-sm">
+      <span className="absolute bottom-2.5 right-2.5 sm:bottom-3 sm:right-3 bg-[#25D366] text-[#050505] text-[8.5px] sm:text-[9px] font-extrabold tracking-[0.14em] uppercase px-2 py-1 rounded-[2px] pointer-events-none shadow-sm">
         {afterLabel}
       </span>
     </div>

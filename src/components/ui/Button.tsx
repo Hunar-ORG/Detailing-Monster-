@@ -16,10 +16,10 @@ interface BaseButtonProps {
 }
 
 const baseStyles =
-  'inline-flex items-center justify-center text-[11px] sm:text-[11.5px] font-bold tracking-[0.12em] uppercase rounded-[3px] transition-all duration-200 cursor-pointer whitespace-nowrap select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e31b23] focus-visible:ring-offset-2 focus-visible:ring-offset-[#09090b] disabled:opacity-50 disabled:cursor-not-allowed';
+  'inline-flex items-center justify-center text-[11px] sm:text-[11.5px] font-bold tracking-[0.12em] uppercase rounded-[3px] transition-all duration-200 cursor-pointer whitespace-nowrap select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050505] disabled:opacity-50 disabled:cursor-not-allowed';
 
 const primaryStyles =
-  'bg-[#e31b23] hover:bg-[#c8171e] active:bg-[#b0141a] text-white shadow-sm';
+  'bg-[#25D366] hover:bg-[#20BD5A] active:bg-[#128C7E] text-[#050505] font-extrabold shadow-sm';
 
 const secondaryStyles =
   'bg-transparent border border-white/20 hover:border-white/40 hover:bg-white/[0.04] active:bg-white/[0.08] text-white';

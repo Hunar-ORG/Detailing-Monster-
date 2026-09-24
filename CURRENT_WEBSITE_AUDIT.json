@@ -99,7 +99,7 @@
       "name": "Service Category Strip",
       "component": "ServiceCategoryStrip.tsx",
       "id": null,
-      "purpose": "Category ticker with red separators and 'Since 2018' heritage badge",
+      "purpose": "Category ticker with red separators and 'Since 2025' heritage badge",
       "isDynamic": false,
       "dataSource": "siteData.ts & hardcoded text"
     },
@@ -417,7 +417,7 @@
   },
   "hardcodedContent": [
     { "text": "in Mysuru", "file": "src/components/HeroSection.tsx" },
-    { "text": "SINCE 2018", "file": "src/components/ServiceCategoryStrip.tsx" },
+    { "text": "SINCE 2025", "file": "src/components/ServiceCategoryStrip.tsx" },
     { "text": "Serving Automotive Enthusiasts in Karnataka", "file": "src/components/ServiceCategoryStrip.tsx" },
     { "text": "Located in Saraswathipuram, Mysuru, near the Central Library", "file": "src/components/StudioAccessSection.tsx" },
     { "text": "We are Karnataka’s elite choice...", "file": "src/components/Footer.tsx" }
@@ -427,14 +427,14 @@
     "Portfolio vehicles (Porsche 911 GT3 RS, Range Rover, AMG GT, BMW M4, Ferrari F8, Lamborghini Huracán)",
     "Studio facility photograph (/studio-facility.jpg)",
     "Social media URLs (generic roots: instagram.com, facebook.com, youtube.com)",
-    "Statistics: '500+ Vehicles Detailed', '98% Satisfaction', '7+ Years Expertise', 'Since 2018'",
+    "Statistics: '500+ Vehicles Detailed', '98% Satisfaction', '7+ Years Expertise', 'Since 2025'",
     "Warranty and hardness claims: '9H+', '110°', '5 YR', '10-Year PPF warranty'"
   ],
   "clientInputRequired": [
     "Active business email confirmation (studio@detailingmonster.com vs alternate)",
     "WhatsApp business number for instant chat routing",
     "Official operational hours and closed days",
-    "Actual founding year (to verify 'Since 2018')",
+    "Actual founding year (to verify 'Since 2025')",
     "Verified Google Business Profile link / CID",
     "Exact ceramic coating brand and warranty period offered",
     "Exact PPF brand and warranty period offered",

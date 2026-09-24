@@ -26,12 +26,12 @@ const BeforeAfterGallery: React.FC<BeforeAfterGalleryProps> = ({
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/30" />
         {/* Label */}
-        <span className="absolute top-3 left-3 bg-[#e31b23] text-white text-[9px] font-bold tracking-[0.16em] uppercase px-2 py-1 rounded-[2px]">
+        <span className="absolute top-3 left-3 bg-[#25D366] text-[#050505] text-[9px] font-extrabold tracking-[0.16em] uppercase px-2 py-1 rounded-[2px]">
           {beforeLabel}
         </span>
       </div>
       {/* Divider */}
-      <div className="w-px bg-[#e31b23]/50 flex-shrink-0" />
+      <div className="w-px bg-[#25D366]/50 flex-shrink-0" />
       {/* After */}
       <div className="flex-1 relative overflow-hidden">
         <img
@@ -41,7 +41,7 @@ const BeforeAfterGallery: React.FC<BeforeAfterGalleryProps> = ({
           loading="lazy"
         />
         {/* Label */}
-        <span className="absolute top-3 right-3 bg-[#e31b23] text-white text-[9px] font-bold tracking-[0.16em] uppercase px-2 py-1 rounded-[2px]">
+        <span className="absolute top-3 right-3 bg-[#25D366] text-[#050505] text-[9px] font-extrabold tracking-[0.16em] uppercase px-2 py-1 rounded-[2px]">
           {afterLabel}
         </span>
       </div>
