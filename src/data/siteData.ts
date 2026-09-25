@@ -31,15 +31,15 @@ export const serviceCategories: ServiceCategory[] = [
   { label: 'PAINT CORRECTION' },
   { label: 'CERAMIC COATING' },
   { label: 'PPF' },
-  { label: 'INTERIOR DETAILING' },
+  { label: 'PAINT PROTECTION' },
 ];
 
 export const serviceCards: ServiceCard[] = [
   {
     id: 1,
     icon: 'paint-correction',
-    title: 'Paint Correction',
-    description: 'Machine leveling to erase defects and unlock mirror clarity.',
+    title: 'Paint Protection Film',
+    description: 'Advanced self-healing film designed to protect your paint while preserving its finish.',
   },
   {
     id: 2,
@@ -56,7 +56,7 @@ export const serviceCards: ServiceCard[] = [
   {
     id: 4,
     icon: 'interior',
-    title: 'Interior Restoration',
-    description: 'Deep leather feeding and tactile surface rejuvenation.',
+    title: 'PPF Installation',
+    description: 'Precision-installed protection against scratches, stone chips, and road debris.',
   },
 ];

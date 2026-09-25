@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { ServiceLabel, FeatureList, PrimaryCTA } from '../components/ui/ServicePrimitives';
 import type { FeatureItemData } from '../components/ui/ServicePrimitives';
 import PPFProtectionDiagram from '../components/PPFProtectionDiagram';
@@ -9,19 +9,19 @@ import type { PPFZoneData } from '../components/PPFZoneCard';
 
 const interiorFeatures: FeatureItemData[] = [
   {
-    title: 'Alcantara & Leather Feeding',
+    title: 'Full-Body PPF Protection',
     description:
-      'Deep pH-balanced cleaning followed by premium essential oil conditioning.',
+      'High-quality paint protection film designed to shield vulnerable painted surfaces from everyday road damage.',
   },
   {
-    title: 'Hot Extraction Cleaning',
+    title: 'Self-Healing Protection',
     description:
-      'Pressure steam flushing of deep carpet fibers to remove micro-particulates.',
+      'Advanced self-healing film helps reduce the appearance of light scratches and swirl marks while maintaining a clean finish.',
   },
   {
-    title: 'Tactile Surface Cleansing',
+    title: 'Stone Chip & Impact Defense',
     description:
-      'Zero-residue brush dusting of intricate dashboard vents and controls.',
+      'Creates a protective barrier against stone chips, road debris, scratches, and other everyday paint damage.',
   },
 ];
 
@@ -45,60 +45,163 @@ const ppfZones: PPFZoneData[] = [
 
 // ─── Section 03: Interior Detailing ──────────────────────────────────────────
 
-export const InteriorDetailingSection: React.FC = () => (
-  <section
-    id="interior-detailing"
-    className="container-site py-20 lg:py-24 scroll-mt-16"
-    aria-labelledby="interior-heading"
-  >
-    {/* Backward compatible anchor alias */}
-    <span id="detailing" className="scroll-mt-16" aria-hidden="true" />
+export const InteriorDetailingSection: React.FC = () => {
+  const [isFlipped, setIsFlipped] = useState(false);
 
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+  const handleFlip = useCallback(() => {
+    setIsFlipped(prev => !prev);
+  }, []);
 
-      {/* ── LEFT: Text ─────────────────────────────────────────────────── */}
-      <div className="flex flex-col">
-        <ServiceLabel>03 · Interior Detailing</ServiceLabel>
+  const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      setIsFlipped(prev => !prev);
+    }
+  }, []);
 
-        <h2
-          id="interior-heading"
-          className="text-[clamp(2rem,3.8vw,2.9rem)] font-bold text-white leading-[1.08] tracking-[-0.022em] mb-5"
-        >
-          Inside deserves the<br />
-          same attention.
-        </h2>
+  return (
+    <section
+      id="interior-detailing"
+      className="container-site py-20 lg:py-24 scroll-mt-16"
+      aria-labelledby="interior-heading"
+    >
+      {/* Backward compatible anchor alias */}
+      <span id="detailing" className="scroll-mt-16" aria-hidden="true" />
 
-        <p className="text-[14px] text-[#8a8a94] leading-[1.7] max-w-[400px]">
-          Beyond clean surfaces, we deliver cockpit preservation. We treat fine
-          leathers, performance textiles, and tactile materials with specialized
-          dry steam.
-        </p>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
 
-        <FeatureList features={interiorFeatures} />
+        {/* ── LEFT: Text ─────────────────────────────────────────────────── */}
+        <div className="flex flex-col">
+          <ServiceLabel>03 · Paint Protection</ServiceLabel>
 
-        <div>
-          <PrimaryCTA href="#reserve" id="restore-interior-btn">
-            RESTORE YOUR INTERIOR
-          </PrimaryCTA>
+          <h2
+            id="interior-heading"
+            className="text-[clamp(2rem,3.8vw,2.9rem)] font-bold text-white leading-[1.08] tracking-[-0.022em] mb-5"
+          >
+            Protection that keeps your<br />
+            paint looking new.
+          </h2>
+
+          <p className="text-[14px] text-[#8a8a94] leading-[1.7] max-w-[400px]">
+            Premium paint protection engineered to preserve your vehicle's finish.
+            Our PPF solutions help defend against road debris, scratches, stone
+            chips, and everyday wear while maintaining the original look of your paint.
+          </p>
+
+          <FeatureList features={interiorFeatures} />
+
+          <div>
+            <PrimaryCTA href="#ppf" id="protect-paint-btn">
+              PROTECT YOUR PAINT
+            </PrimaryCTA>
+          </div>
         </div>
-      </div>
 
-      {/* ── RIGHT: Interior image ───────────────────────────────────────── */}
-      <div className="order-first lg:order-last">
-        <div className="rounded-[8px] overflow-hidden border border-white/[0.08]">
-          <img
-            src="/interior-cockpit.jpg"
-            alt="Premium sports car interior showing steering wheel, digital instrument cluster and center console"
-            className="w-full h-[300px] sm:h-[360px] lg:h-[440px] object-cover object-center"
-            loading="lazy"
-            decoding="async"
-          />
+        {/* ── RIGHT: Interior image with 3D flip ──────────────────────────── */}
+        <div className="order-first lg:order-last">
+          {/* Perspective wrapper */}
+          <div
+            className="interior-flip-scene rounded-[8px]"
+            style={{ perspective: '1000px' }}
+          >
+            {/* The card that flips */}
+            <div
+              className={`interior-flip-card${isFlipped ? ' interior-flip-card--flipped' : ''}`}
+              onClick={handleFlip}
+              onKeyDown={handleKeyDown}
+              tabIndex={0}
+              role="button"
+              aria-pressed={isFlipped}
+              aria-label={isFlipped ? 'Show after interior — click to flip back' : 'Show before interior — click to flip'}
+              style={{
+                position: 'relative',
+                width: '100%',
+                transformStyle: 'preserve-3d',
+                transition: 'transform 0.65s cubic-bezier(0.4, 0, 0.2, 1)',
+                transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
+                cursor: 'pointer',
+                outline: 'none',
+                borderRadius: '8px',
+              }}
+            >
+              {/* ── FRONT face: after (cockpit) ── */}
+              <div
+                className="interior-flip-face interior-flip-face--front"
+                style={{
+                  backfaceVisibility: 'hidden',
+                  WebkitBackfaceVisibility: 'hidden',
+                  borderRadius: '8px',
+                  overflow: 'hidden',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                }}
+              >
+                <img
+                  src="/interior-cockpit.jpg"
+                  alt="Premium sports car interior showing steering wheel, digital instrument cluster and center console"
+                  className="w-full h-[300px] sm:h-[360px] lg:h-[440px] object-cover object-center"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              {/* ── BACK face: before ── */}
+              <div
+                className="interior-flip-face interior-flip-face--back"
+                style={{
+                  backfaceVisibility: 'hidden',
+                  WebkitBackfaceVisibility: 'hidden',
+                  transform: 'rotateY(180deg)',
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  borderRadius: '8px',
+                  overflow: 'hidden',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                }}
+              >
+                <img
+                  src="/interior-before.jpg"
+                  alt="Interior before detailing treatment — showing original condition"
+                  className="w-full h-[300px] sm:h-[360px] lg:h-[440px] object-cover object-center"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+
+            {/* Flip hint badge */}
+            <div
+              className="interior-flip-hint"
+              aria-hidden="true"
+              style={{
+                position: 'absolute',
+                bottom: '12px',
+                right: '12px',
+                background: 'rgba(0,0,0,0.55)',
+                backdropFilter: 'blur(6px)',
+                WebkitBackdropFilter: 'blur(6px)',
+                border: '1px solid rgba(255,255,255,0.12)',
+                borderRadius: '6px',
+                padding: '5px 10px',
+                fontSize: '11px',
+                color: 'rgba(255,255,255,0.7)',
+                letterSpacing: '0.05em',
+                pointerEvents: 'none',
+                userSelect: 'none',
+                transition: 'opacity 0.3s',
+              }}
+            >
+              {isFlipped ? '← AFTER' : 'TAP TO FLIP →'}
+            </div>
+          </div>
         </div>
-      </div>
 
-    </div>
-  </section>
-);
+      </div>
+    </section>
+  );
+};
 
 // ─── Section 04: Paint Protection Film ───────────────────────────────────────
 

@@ -1,4 +1,4 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -65,7 +65,7 @@
     }
   }
 
-  /* ── PPF Install Custom Cutter Icon Controls ───────────────────────── */
+  /* â”€â”€ PPF Install Custom Cutter Icon Controls â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .ppf-install-icon {
     --ppf-icon-shift-x: -15%;
     --ppf-icon-shift-y: 0px;
@@ -75,3 +75,24 @@
   }
 }
 
+
+
+/* ── Interior Detailing 3D Flip Card ───────────────────────────────────────── */
+.interior-flip-scene {
+  position: relative;
+}
+
+/* Keep the card height consistent so the scene doesn't collapse */
+.interior-flip-card {
+  display: block;
+}
+
+/* Focus ring for keyboard users */
+.interior-flip-card:focus-visible {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35);
+}
+
+/* Hint fades slightly when flipped */
+.interior-flip-card--flipped ~ .interior-flip-hint {
+  opacity: 0.6;
+}
