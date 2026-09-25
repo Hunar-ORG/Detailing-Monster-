@@ -3,16 +3,16 @@ import type { TestimonialItem } from '../types';
 export const testimonials: TestimonialItem[] = [
   {
     id: 'daniel-r',
-    name: 'Daniel R.',
-    vehicle: 'Porsche 911 Owner',
+    name: 'Shoaib Khan',
+    vehicle: 'Classic 350 Owner',
     rating: 5,
     quote:
-      '“The paint looked better than the day I bought the car. Swirls and light defects are completely gone, replaced by a deep optical depth I didn\'t think was possible. The attention to detail is unmatched.”',
+      '“The PPF coating made my Classic 350 look incredible. The paint has a deep, glossy finish, and knowing it\'s protected from everyday scratches, road debris, and minor damage gives me real peace of mind. The installation was clean, precise, and the attention to detail was excellent.”',
   },
   {
     id: 'michael-t',
-    name: 'Michael T.',
-    vehicle: 'Range Rover Owner',
+    name: 'Sultan',
+    vehicle: 'Maruti Suzuki Swift Owner',
     rating: 5,
     quote:
       '“DETAILING MONSTER treated my autobiography like it was their own prized asset. The PPF wrapping is completely seamless—literally invisible. Excellent customer service and communication from the team.”',
@@ -20,7 +20,7 @@ export const testimonials: TestimonialItem[] = [
   {
     id: 'ahmed-k',
     name: 'Ahmed K.',
-    vehicle: 'Mercedes-AMG Owner',
+    vehicle: 'Hyundai Creta Owner',
     rating: 5,
     quote:
       '“Professional, certified, and genuinely passionate. They mapped my entire paint thickness with an ultrasonic gauge before starting correction. Highly technical, master-level detailing service.”',

@@ -382,9 +382,9 @@ The primary landing page (`src/pages/HomePage.tsx`) orchestrates all 13 major se
 #### Section 09: Testimonials (`src/pages/Page6.tsx` & `src/data/page6Data.ts`)
 - Section Label: `TESTIMONIALS`
 - Headline: `Trusted by people who care about their cars.`
-- Review 1: `Daniel R.` (Porsche 911 Owner) — 5 Stars — *“The paint looked better than the day I bought the car. Swirls and light defects are completely gone, replaced by a deep optical depth I didn't think was possible. The attention to detail is unmatched.”*
-- Review 2: `Michael T.` (Range Rover Owner) — 5 Stars — *“DETAILING MONSTER treated my autobiography like it was their own prized asset. The PPF wrapping is completely seamless—literally invisible. Excellent customer service and communication from the team.”*
-- Review 3: `Ahmed K.` (Mercedes-AMG Owner) — 5 Stars — *“Professional, certified, and genuinely passionate. They mapped my entire paint thickness with an ultrasonic gauge before starting correction. Highly technical, master-level detailing service.”*
+- Review 1: `Shoaib Khan` (Classic 350 Owner) — 5 Stars — *“The PPF coating made my Classic 350 look incredible. The paint has a deep, glossy finish, and knowing it's protected from everyday scratches, road debris, and minor damage gives me real peace of mind. The installation was clean, precise, and the attention to detail was excellent.”*
+- Review 2: `Sultan.` (Maruti Suzuki Swift Owner) — 5 Stars — *“DETAILING MONSTER treated my autobiography like it was their own prized asset. The PPF wrapping is completely seamless—literally invisible. Excellent customer service and communication from the team.”*
+- Review 3: `Ahmed K.` (Hyundai Creta Owner) — 5 Stars — *“Professional, certified, and genuinely passionate. They mapped my entire paint thickness with an ultrasonic gauge before starting correction. Highly technical, master-level detailing service.”*
 
 #### Section 10: Reserve Your Detail (`src/components/ReservationSection.tsx` & `src/components/AppointmentForm.tsx`)
 - Section Label: `RESERVE YOUR DETAIL`
@@ -503,7 +503,7 @@ A rigorous global search of the entire project repository was performed to disco
 | **Coating Specs** | `9H+ Hardness`, `110° Beading`, `5 YR Guaranteed Shell` | `ServiceShowcasePage.tsx` | Template / Vendor specs | **YES** (Confirm products used) |
 | **PPF Warranty Claim** | `10-year manufacturer warranty` | `page7Data.ts` (FAQ #4) | Template / Vendor specs | **YES** (Confirm PPF manufacturer) |
 | **Paint Depth Metric** | `removing only microscopic... (1–3 microns)` | `page7Data.ts` (FAQ #3) | Technical industry claim | **YES** (Technician approval) |
-| **Customer Testimonials** | Daniel R. (Porsche), Michael T. (Range Rover), Ahmed K. (AMG) | `page6Data.ts` | Template / Demo reviews | **YES** (Must replace with real reviews) |
+| **Customer Testimonials** | Shoaib Khan (Classic 350), Sultan. (Range Rover), Ahmed K. (AMG) | `page6Data.ts` | Template / Demo reviews | **YES** (Must replace with real reviews) |
 | **Portfolio Vehicles** | GT3 RS, Range Rover, AMG GT, M4, F8, Huracán | `page5Data.ts` | Template / Demo projects | **YES** (Provide real client cars) |
 | **Social Links** | `instagram.com`, `facebook.com`, `youtube.com` | `page8Data.ts` | Placeholder root URLs | **YES** (Provide real usernames/handles) |
 | **Studio Image** | `/studio-facility.jpg` | `public/studio-facility.jpg` | Stock / Demo photo | **YES** (Provide photo of Mysuru lab) |
@@ -779,9 +779,9 @@ Defined in `src/data/page6Data.ts` and rendered by `src/components/TestimonialCa
 
 | Reviewer Name | Vehicle Owned | Rating | Verbatim Review Quote | Authenticity Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| **Daniel R.** | *Porsche 911 Owner* | 5 Stars | *“The paint looked better than the day I bought the car. Swirls and light defects are completely gone, replaced by a deep optical depth I didn't think was possible. The attention to detail is unmatched.”* | **TEMPLATE / DEMO DATA** |
-| **Michael T.** | *Range Rover Owner* | 5 Stars | *“DETAILING MONSTER treated my autobiography like it was their own prized asset. The PPF wrapping is completely seamless—literally invisible. Excellent customer service and communication from the team.”* | **TEMPLATE / DEMO DATA** |
-| **Ahmed K.** | *Mercedes-AMG Owner* | 5 Stars | *“Professional, certified, and genuinely passionate. They mapped my entire paint thickness with an ultrasonic gauge before starting correction. Highly technical, master-level detailing service.”* | **TEMPLATE / DEMO DATA** |
+| **Shoaib Khan** | *Classic 350 Owner* | 5 Stars | *“The PPF coating made my Classic 350 look incredible. The paint has a deep, glossy finish, and knowing it's protected from everyday scratches, road debris, and minor damage gives me real peace of mind. The installation was clean, precise, and the attention to detail was excellent.”* | **TEMPLATE / DEMO DATA** |
+| **Sultan** | *Maruti Suzuki Swift Owner* | 5 Stars | *“DETAILING MONSTER treated my autobiography like it was their own prized asset. The PPF wrapping is completely seamless—literally invisible. Excellent customer service and communication from the team.”* | **TEMPLATE / DEMO DATA** |
+| **Ahmed K.** | *Hyundai Creta Owner* | 5 Stars | *“Professional, certified, and genuinely passionate. They mapped my entire paint thickness with an ultrasonic gauge before starting correction. Highly technical, master-level detailing service.”* | **TEMPLATE / DEMO DATA** |
 
 *Recommendation:* Replace all three with genuine Google Business Profile reviews or direct quotes from actual customers in Mysuru/Karnataka.
 

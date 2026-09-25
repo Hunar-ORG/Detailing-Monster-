@@ -46,25 +46,101 @@
     ]
   },
   "routes": [
-    { "path": "/", "component": "HomePage", "purpose": "Master long-scroll page with all 13 sections" },
-    { "path": "/services", "component": "ServiceShowcasePage", "purpose": "Paint Correction + Ceramic Coating" },
-    { "path": "/paint-protection", "component": "ServiceShowcasePage", "purpose": "Alias route for Paint Protection" },
-    { "path": "/detailing", "component": "Page3", "purpose": "Interior Detailing + PPF" },
-    { "path": "/gallery", "component": "Page4", "purpose": "Visual Shift + Engineered Method" },
-    { "path": "/process", "component": "Page4", "purpose": "Alias route for Process" },
-    { "path": "/portfolio", "component": "Page5", "purpose": "The Standard + Our Portfolio" },
-    { "path": "/standard", "component": "Page5", "purpose": "Alias route for The Standard" },
-    { "path": "/page5", "component": "Page5", "purpose": "Dev route for Page 5" },
-    { "path": "/reserve", "component": "Page6", "purpose": "Testimonials + Reserve Your Detail" },
-    { "path": "/testimonials", "component": "Page6", "purpose": "Alias route for Testimonials" },
-    { "path": "/contact", "component": "Page6", "purpose": "Alias route for Contact" },
-    { "path": "/page6", "component": "Page6", "purpose": "Dev route for Page 6" },
-    { "path": "/location", "component": "Page7", "purpose": "Studio Access + FAQ" },
-    { "path": "/faq", "component": "Page7", "purpose": "Alias route for FAQ" },
-    { "path": "/about", "component": "Page7", "purpose": "Alias route for About" },
-    { "path": "/page7", "component": "Page7", "purpose": "Dev route for Page 7" },
-    { "path": "/cta", "component": "Page8", "purpose": "Final CTA standalone view" },
-    { "path": "/page8", "component": "Page8", "purpose": "Dev route for Page 8" }
+    {
+      "path": "/",
+      "component": "HomePage",
+      "purpose": "Master long-scroll page with all 13 sections"
+    },
+    {
+      "path": "/services",
+      "component": "ServiceShowcasePage",
+      "purpose": "Paint Correction + Ceramic Coating"
+    },
+    {
+      "path": "/paint-protection",
+      "component": "ServiceShowcasePage",
+      "purpose": "Alias route for Paint Protection"
+    },
+    {
+      "path": "/detailing",
+      "component": "Page3",
+      "purpose": "Interior Detailing + PPF"
+    },
+    {
+      "path": "/gallery",
+      "component": "Page4",
+      "purpose": "Visual Shift + Engineered Method"
+    },
+    {
+      "path": "/process",
+      "component": "Page4",
+      "purpose": "Alias route for Process"
+    },
+    {
+      "path": "/portfolio",
+      "component": "Page5",
+      "purpose": "The Standard + Our Portfolio"
+    },
+    {
+      "path": "/standard",
+      "component": "Page5",
+      "purpose": "Alias route for The Standard"
+    },
+    {
+      "path": "/page5",
+      "component": "Page5",
+      "purpose": "Dev route for Page 5"
+    },
+    {
+      "path": "/reserve",
+      "component": "Page6",
+      "purpose": "Testimonials + Reserve Your Detail"
+    },
+    {
+      "path": "/testimonials",
+      "component": "Page6",
+      "purpose": "Alias route for Testimonials"
+    },
+    {
+      "path": "/contact",
+      "component": "Page6",
+      "purpose": "Alias route for Contact"
+    },
+    {
+      "path": "/page6",
+      "component": "Page6",
+      "purpose": "Dev route for Page 6"
+    },
+    {
+      "path": "/location",
+      "component": "Page7",
+      "purpose": "Studio Access + FAQ"
+    },
+    {
+      "path": "/faq",
+      "component": "Page7",
+      "purpose": "Alias route for FAQ"
+    },
+    {
+      "path": "/about",
+      "component": "Page7",
+      "purpose": "Alias route for About"
+    },
+    {
+      "path": "/page7",
+      "component": "Page7",
+      "purpose": "Dev route for Page 7"
+    },
+    {
+      "path": "/cta",
+      "component": "Page8",
+      "purpose": "Final CTA standalone view"
+    },
+    {
+      "path": "/page8",
+      "component": "Page8",
+      "purpose": "Dev route for Page 8"
+    }
   ],
   "sections": [
     {
@@ -247,32 +323,95 @@
   ],
   "navigation": {
     "header": [
-      { "label": "Services", "destination": "#services" },
-      { "label": "Paint Protection", "destination": "#paint-protection" },
-      { "label": "Detailing", "destination": "#detailing" },
-      { "label": "Gallery", "destination": "#portfolio" },
-      { "label": "Process", "destination": "#process" },
-      { "label": "About", "destination": "#standard" },
-      { "label": "BOOK APPOINTMENT", "destination": "#reserve" }
+      {
+        "label": "Services",
+        "destination": "#services"
+      },
+      {
+        "label": "Paint Protection",
+        "destination": "#paint-protection"
+      },
+      {
+        "label": "Detailing",
+        "destination": "#detailing"
+      },
+      {
+        "label": "Gallery",
+        "destination": "#portfolio"
+      },
+      {
+        "label": "Process",
+        "destination": "#process"
+      },
+      {
+        "label": "About",
+        "destination": "#standard"
+      },
+      {
+        "label": "BOOK APPOINTMENT",
+        "destination": "#reserve"
+      }
     ],
     "footerServices": [
-      { "label": "Paint Correction", "destination": "#paint-correction" },
-      { "label": "Ceramic Coating", "destination": "#ceramic-coating" },
-      { "label": "PPF Protection", "destination": "#ppf" },
-      { "label": "Interior Detailing", "destination": "#detailing" },
-      { "label": "Precision Detailing", "destination": "#services" }
+      {
+        "label": "Paint Correction",
+        "destination": "#paint-correction"
+      },
+      {
+        "label": "Ceramic Coating",
+        "destination": "#ceramic-coating"
+      },
+      {
+        "label": "PPF Protection",
+        "destination": "#ppf"
+      },
+      {
+        "label": "Interior Detailing",
+        "destination": "#detailing"
+      },
+      {
+        "label": "Precision Detailing",
+        "destination": "#services"
+      }
     ],
     "footerCompany": [
-      { "label": "About Studio", "destination": "#standard" },
-      { "label": "Our Process", "destination": "#process" },
-      { "label": "Portfolio Gallery", "destination": "#portfolio" },
-      { "label": "Client Reviews", "destination": "#testimonials" },
-      { "label": "FAQ", "destination": "#faq" }
+      {
+        "label": "About Studio",
+        "destination": "#standard"
+      },
+      {
+        "label": "Our Process",
+        "destination": "#process"
+      },
+      {
+        "label": "Portfolio Gallery",
+        "destination": "#portfolio"
+      },
+      {
+        "label": "Client Reviews",
+        "destination": "#testimonials"
+      },
+      {
+        "label": "FAQ",
+        "destination": "#faq"
+      }
     ],
     "socialLinks": [
-      { "platform": "Instagram", "url": "https://instagram.com", "status": "Placeholder root URL" },
-      { "platform": "Facebook", "url": "https://facebook.com", "status": "Placeholder root URL" },
-      { "platform": "YouTube", "url": "https://youtube.com", "status": "Placeholder root URL" }
+      {
+        "platform": "Instagram",
+        "url": "https://instagram.com",
+        "status": "Placeholder root URL"
+      },
+      {
+        "platform": "Facebook",
+        "url": "https://facebook.com",
+        "status": "Placeholder root URL"
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://youtube.com",
+        "status": "Placeholder root URL"
+      }
     ]
   },
   "forms": [
@@ -282,13 +421,47 @@
       "isFunctional": false,
       "mode": "Client-side frontend simulation (Mock)",
       "fields": [
-        { "name": "fullName", "type": "text", "required": true, "validation": "min 2 chars" },
-        { "name": "email", "type": "email", "required": true, "validation": "email regex" },
-        { "name": "phone", "type": "tel", "required": true, "validation": "7-15 digits regex" },
-        { "name": "vehicleModel", "type": "text", "required": true, "validation": "non-empty" },
-        { "name": "requestedService", "type": "select", "required": true, "optionsCount": 5 },
-        { "name": "preferredDate", "type": "date", "required": true, "validation": ">= current date" },
-        { "name": "message", "type": "textarea", "required": false }
+        {
+          "name": "fullName",
+          "type": "text",
+          "required": true,
+          "validation": "min 2 chars"
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "required": true,
+          "validation": "email regex"
+        },
+        {
+          "name": "phone",
+          "type": "tel",
+          "required": true,
+          "validation": "7-15 digits regex"
+        },
+        {
+          "name": "vehicleModel",
+          "type": "text",
+          "required": true,
+          "validation": "non-empty"
+        },
+        {
+          "name": "requestedService",
+          "type": "select",
+          "required": true,
+          "optionsCount": 5
+        },
+        {
+          "name": "preferredDate",
+          "type": "date",
+          "required": true,
+          "validation": ">= current date"
+        },
+        {
+          "name": "message",
+          "type": "textarea",
+          "required": false
+        }
       ],
       "backendService": "src/services/appointmentService.ts",
       "latencySimulationMs": 600,
@@ -300,48 +473,144 @@
     {
       "id": 1,
       "name": "Paint Correction",
-      "claims": ["Ultrasonic measurement", "Multi-stage leveling", "Optical refinement", "1–3 microns removal"],
+      "claims": [
+        "Ultrasonic measurement",
+        "Multi-stage leveling",
+        "Optical refinement",
+        "1–3 microns removal"
+      ],
       "status": "Industry standard technical claim; requires technician confirmation"
     },
     {
       "id": 2,
       "name": "Ceramic Coating",
-      "claims": ["9H+ Hardness Matrix", "110° Beading Angle", "5 YR Guaranteed Shell"],
+      "claims": [
+        "9H+ Hardness Matrix",
+        "110° Beading Angle",
+        "5 YR Guaranteed Shell"
+      ],
       "status": "Manufacturer vendor specification; requires confirmation of coating brand installed"
     },
     {
       "id": 3,
       "name": "Interior Detailing",
-      "claims": ["Alcantara feeding", "Deep pH-balanced cleaning", "Hot extraction", "Zero-residue brush dusting"],
+      "claims": [
+        "Alcantara feeding",
+        "Deep pH-balanced cleaning",
+        "Hot extraction",
+        "Zero-residue brush dusting"
+      ],
       "status": "Industry standard detailing claim; requires confirmation of chemicals used"
     },
     {
       "id": 4,
       "name": "Paint Protection Film (PPF)",
-      "claims": ["Self-healing with heat", "Edge-wrapped finish", "10-Year Manufacturer Warranty"],
+      "claims": [
+        "Self-healing with heat",
+        "Edge-wrapped finish",
+        "10-Year Manufacturer Warranty"
+      ],
       "status": "Manufacturer vendor specification; requires confirmation of PPF film roll supplier"
     }
   ],
   "portfolio": [
-    { "id": "porsche", "vehicle": "Porsche 911 GT3 RS", "service": "Multi-Stage Correction • Ceramic Coating", "image": "/portfolio-porsche.jpg", "isClient": false },
-    { "id": "rangerover", "vehicle": "Range Rover Autobiography", "service": "Full Exterior Self-Healing PPF Wrap", "image": "/portfolio-rangerover.jpg", "isClient": false },
-    { "id": "amg", "vehicle": "Mercedes-AMG GT Black Series", "service": "Track Prep PPF + Advanced Wheel Coating", "image": "/portfolio-amg.jpg", "isClient": false },
-    { "id": "bmw", "vehicle": "BMW M4 Competition", "service": "Paint Correction + 5-Year Dual Quartz Coating", "image": "/portfolio-bmwm4.jpg", "isClient": false },
-    { "id": "ferrari", "vehicle": "Ferrari F8 Tributo", "service": "Interior Cockpit Restoration + Leather Feeding", "image": "/portfolio-ferrari.jpg", "isClient": false },
-    { "id": "lamborghini", "vehicle": "Lamborghini Huracán Evo", "service": "Full Correction + Hydrophobic Glass Coating", "image": "/portfolio-lamborghini.jpg", "isClient": false }
+    {
+      "id": "porsche",
+      "vehicle": "Porsche 911 GT3 RS",
+      "service": "Multi-Stage Correction • Ceramic Coating",
+      "image": "/portfolio-porsche.jpg",
+      "isClient": false
+    },
+    {
+      "id": "rangerover",
+      "vehicle": "Range Rover Autobiography",
+      "service": "Full Exterior Self-Healing PPF Wrap",
+      "image": "/portfolio-rangerover.jpg",
+      "isClient": false
+    },
+    {
+      "id": "amg",
+      "vehicle": "Mercedes-AMG GT Black Series",
+      "service": "Track Prep PPF + Advanced Wheel Coating",
+      "image": "/portfolio-amg.jpg",
+      "isClient": false
+    },
+    {
+      "id": "bmw",
+      "vehicle": "BMW M4 Competition",
+      "service": "Paint Correction + 5-Year Dual Quartz Coating",
+      "image": "/portfolio-bmwm4.jpg",
+      "isClient": false
+    },
+    {
+      "id": "ferrari",
+      "vehicle": "Ferrari F8 Tributo",
+      "service": "Interior Cockpit Restoration + Leather Feeding",
+      "image": "/portfolio-ferrari.jpg",
+      "isClient": false
+    },
+    {
+      "id": "lamborghini",
+      "vehicle": "Lamborghini Huracán Evo",
+      "service": "Full Correction + Hydrophobic Glass Coating",
+      "image": "/portfolio-lamborghini.jpg",
+      "isClient": false
+    }
   ],
   "testimonials": [
-    { "id": "daniel-r", "name": "Daniel R.", "vehicle": "Porsche 911 Owner", "rating": 5, "isAuthentic": false },
-    { "id": "michael-t", "name": "Michael T.", "vehicle": "Range Rover Owner", "rating": 5, "isAuthentic": false },
-    { "id": "ahmed-k", "name": "Ahmed K.", "vehicle": "Mercedes-AMG Owner", "rating": 5, "isAuthentic": false }
+    {
+      "id": "daniel-r",
+      "name": "Shoaib Khan",
+      "vehicle": "Classic 350 Owner",
+      "rating": 5,
+      "isAuthentic": false
+    },
+    {
+      "id": "michael-t",
+      "name": "Sultan",
+      "vehicle": "Maruti Suzuki Swift Owner",
+      "rating": 5,
+      "isAuthentic": false
+    },
+    {
+      "id": "ahmed-k",
+      "name": "Ahmed K.",
+      "vehicle": "Hyundai Creta Owner",
+      "rating": 5,
+      "isAuthentic": false
+    }
   ],
   "faq": [
-    { "id": "faq-1", "question": "How long does detailing take?", "defaultOpen": true },
-    { "id": "faq-2", "question": "How often should I ceramic coat my car?", "defaultOpen": false },
-    { "id": "faq-3", "question": "Is paint correction safe for my vehicle?", "defaultOpen": false },
-    { "id": "faq-4", "question": "How long does PPF last?", "defaultOpen": false },
-    { "id": "faq-5", "question": "Can you detail luxury and performance cars?", "defaultOpen": false },
-    { "id": "faq-6", "question": "Do I need to book in advance?", "defaultOpen": false }
+    {
+      "id": "faq-1",
+      "question": "How long does detailing take?",
+      "defaultOpen": true
+    },
+    {
+      "id": "faq-2",
+      "question": "How often should I ceramic coat my car?",
+      "defaultOpen": false
+    },
+    {
+      "id": "faq-3",
+      "question": "Is paint correction safe for my vehicle?",
+      "defaultOpen": false
+    },
+    {
+      "id": "faq-4",
+      "question": "How long does PPF last?",
+      "defaultOpen": false
+    },
+    {
+      "id": "faq-5",
+      "question": "Can you detail luxury and performance cars?",
+      "defaultOpen": false
+    },
+    {
+      "id": "faq-6",
+      "question": "Do I need to book in advance?",
+      "defaultOpen": false
+    }
   ],
   "assets": {
     "totalPublicImages": 17,
@@ -374,7 +643,12 @@
     "phone": "+91 9945228752",
     "hours": "Mo-Sa 09:00-19:00",
     "priceRange": "$$$$",
-    "missingSchemaFields": ["geo.latitude", "geo.longitude", "areaServed", "sameAs (social URLs)"]
+    "missingSchemaFields": [
+      "geo.latitude",
+      "geo.longitude",
+      "areaServed",
+      "sameAs (social URLs)"
+    ]
   },
   "accessibility": {
     "wcagLevel": "2.1 AA Compliant",
@@ -416,14 +690,29 @@
     }
   },
   "hardcodedContent": [
-    { "text": "in Mysuru", "file": "src/components/HeroSection.tsx" },
-    { "text": "SINCE 2025", "file": "src/components/ServiceCategoryStrip.tsx" },
-    { "text": "Serving Automotive Enthusiasts in Karnataka", "file": "src/components/ServiceCategoryStrip.tsx" },
-    { "text": "Located in Saraswathipuram, Mysuru, near the Central Library", "file": "src/components/StudioAccessSection.tsx" },
-    { "text": "We are Karnataka’s elite choice...", "file": "src/components/Footer.tsx" }
+    {
+      "text": "in Mysuru",
+      "file": "src/components/HeroSection.tsx"
+    },
+    {
+      "text": "SINCE 2025",
+      "file": "src/components/ServiceCategoryStrip.tsx"
+    },
+    {
+      "text": "Serving Automotive Enthusiasts in Karnataka",
+      "file": "src/components/ServiceCategoryStrip.tsx"
+    },
+    {
+      "text": "Located in Saraswathipuram, Mysuru, near the Central Library",
+      "file": "src/components/StudioAccessSection.tsx"
+    },
+    {
+      "text": "We are Karnataka’s elite choice...",
+      "file": "src/components/Footer.tsx"
+    }
   ],
   "templateContent": [
-    "Customer reviews (Daniel R., Michael T., Ahmed K.)",
+    "Customer reviews (Shoaib Khan, Sultan, Ahmed K.)",
     "Portfolio vehicles (Porsche 911 GT3 RS, Range Rover, AMG GT, BMW M4, Ferrari F8, Lamborghini Huracán)",
     "Studio facility photograph (/studio-facility.jpg)",
     "Social media URLs (generic roots: instagram.com, facebook.com, youtube.com)",
@@ -445,19 +734,60 @@
     "Lead destination strategy for appointment form (Email API vs WhatsApp vs CRM webhook)"
   ],
   "technicalDebt": [
-    { "severity": "CRITICAL", "item": "Appointment form is mock-only; lead data is not stored or forwarded." },
-    { "severity": "CRITICAL", "item": "dist/ directory contains stale build with old Blackline Auto / Islamabad branding." },
-    { "severity": "HIGH", "item": "8.2MB uncompressed JPEG images without WebP/AVIF variants." },
-    { "severity": "HIGH", "item": "@types/react-router-dom v5 installed alongside react-router-dom v7 in dependencies." },
-    { "severity": "HIGH", "item": "Low resolution visual assets for Ferrari, Lamborghini, and studio facility." },
-    { "severity": "MEDIUM", "item": "Hardcoded location strings in JSX bypassing studioConfig.ts." },
-    { "severity": "LOW", "item": "Unused assets hero.png, react.svg, and vite.svg in src/assets/." }
+    {
+      "severity": "CRITICAL",
+      "item": "Appointment form is mock-only; lead data is not stored or forwarded."
+    },
+    {
+      "severity": "CRITICAL",
+      "item": "dist/ directory contains stale build with old Blackline Auto / Islamabad branding."
+    },
+    {
+      "severity": "HIGH",
+      "item": "8.2MB uncompressed JPEG images without WebP/AVIF variants."
+    },
+    {
+      "severity": "HIGH",
+      "item": "@types/react-router-dom v5 installed alongside react-router-dom v7 in dependencies."
+    },
+    {
+      "severity": "HIGH",
+      "item": "Low resolution visual assets for Ferrari, Lamborghini, and studio facility."
+    },
+    {
+      "severity": "MEDIUM",
+      "item": "Hardcoded location strings in JSX bypassing studioConfig.ts."
+    },
+    {
+      "severity": "LOW",
+      "item": "Unused assets hero.png, react.svg, and vite.svg in src/assets/."
+    }
   ],
   "risks": [
-    { "id": "R-01", "severity": "CRITICAL", "issue": "Customer leads submitting the booking form are lost permanently." },
-    { "id": "R-02", "severity": "CRITICAL", "issue": "Deploying directly from dist/ will publish the old Blackline Auto template." },
-    { "id": "R-03", "severity": "HIGH", "issue": "Unverified warranty and experience numbers carry false advertising risks." },
-    { "id": "R-04", "severity": "HIGH", "issue": "8.2MB payload impairs mobile 4G page speed scores and increases bounce rate." },
-    { "id": "R-05", "severity": "MEDIUM", "issue": "Footer social links redirect users away to generic platform homepages." }
+    {
+      "id": "R-01",
+      "severity": "CRITICAL",
+      "issue": "Customer leads submitting the booking form are lost permanently."
+    },
+    {
+      "id": "R-02",
+      "severity": "CRITICAL",
+      "issue": "Deploying directly from dist/ will publish the old Blackline Auto template."
+    },
+    {
+      "id": "R-03",
+      "severity": "HIGH",
+      "issue": "Unverified warranty and experience numbers carry false advertising risks."
+    },
+    {
+      "id": "R-04",
+      "severity": "HIGH",
+      "issue": "8.2MB payload impairs mobile 4G page speed scores and increases bounce rate."
+    },
+    {
+      "id": "R-05",
+      "severity": "MEDIUM",
+      "issue": "Footer social links redirect users away to generic platform homepages."
+    }
   ]
 }
